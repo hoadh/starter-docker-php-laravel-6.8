@@ -2,7 +2,6 @@
 
 ## Prepare
 
-* composer
 * docker
 * docker-compose
 
@@ -10,7 +9,9 @@
 
 ```shell script
 git clone https://github.com/hoadh/starter-docker-php-laravel-6.8.git
-composer install
+
+# Install without composer
+docker run --rm -v $(pwd):/app prooph/composer:7.3 install
 ```
 
 ```shell script
